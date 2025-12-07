@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Hydra Launcher — Launcher Demo</title>
+
+  <!-- Inter (similar ao site original) -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR FIXA -->
+  <header class="navbar">
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='%234ADBC8'/></svg>" alt="logo" class="logo-mark">
+        <span class="logo-text">Hydra</span>
+      </div>
+
+      <div class="nav-actions">
+        <div class="lang-group" aria-hidden>
+          <button id="lang-toggle" class="btn btn-ghost">PT-BR</button>
+        </div>
+
+        <button id="theme-toggle" class="btn btn-ghost" aria-label="Toggle theme">🌙</button>
+        <a class="btn btn-primary btn-compact" href="#download" data-translate="nav_download">Download</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <main>
+    <section class="hero container">
+      <div class="hero-inner">
+        <h1 class="hero-title" data-translate="hero_title">The definitive game launcher for all your gaming needs</h1>
+        <p class="hero-sub" data-translate="hero_sub">Download, play, track your stats and manage your games all in one place.</p>
+
+        <div class="hero-cta">
+          <a class="btn btn-xl btn-cta" href="#download" data-translate="cta_primary">Download for Windows</a>
+          <a class="btn btn-outline" href="https://github.com/hydralauncher" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+      </div>
+
+      <!-- decorative glows / texture (puro CSS) -->
+      <div class="bg-ellipse ellipse-1"></div>
+      <div class="bg-ellipse ellipse-2"></div>
+      <div class="bg-texture"></div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features container section">
+      <h2 class="section-title" data-translate="features_title">We have lots of cool features</h2>
+
+      <div class="cards">
+        <article class="card" data-translate="feat_1">
+          <h3>Embedded Downloader</h3>
+          <p>Hydra's built-in downloader client centralizes all your sources in one place, so you can download games with lightning speed.</p>
+        </article>
+
+        <article class="card" data-translate="feat_2">
+          <h3>Windows & Linux Support</h3>
+          <p>We want to give you the freedom to game on your platform of choice without compromise.</p>
+        </article>
+
+        <article class="card" data-translate="feat_3">
+          <h3>Constant Updates</h3>
+          <p>With regular updates, you can count on the latest features and bug fixes to keep your library running smoothly.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD -->
+    <section id="download" class="download container section">
+      <div class="download-inner">
+        <h2 class="section-title" data-translate="download_title">Download</h2>
+        <p class="muted" data-translate="download_sub">Once the download is complete, simply run the installer and follow the on-screen instructions to set up Hydra.</p>
+
+        <div class="download-grid">
+          <div class="download-card">
+            <div class="card-top">
+              <svg class="os-icon" width="40" height="40" viewBox="0 0 24 24" fill="none"><rect width="24" height="24" rx="3" fill="#111"/></svg>
+              <h3>Windows</h3>
+            </div>
+            <p>Recommended: Windows setup (installer)</p>
+            <div class="download-actions">
+              <a class="btn btn-primary" href="https://github.com/hydralauncher/hydra/releases/latest" target="_blank" rel="noopener">Download</a>
+              <a class="btn btn-outline" href="https://github.com/hydralauncher/hydra" target="_blank" rel="noopener">Portable / Source</a>
+            </div>
+          </div>
+
+          <div class="download-card">
+            <div class="card-top">
+              <svg class="os-icon" width="40" height="40" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="12" fill="#111"/></svg>
+              <h3>Linux</h3>
+            </div>
+            <p>Lightweight releases and packages for multiple distributions.</p>
+            <div class="download-actions">
+              <a class="btn btn-primary" href="https://github.com/hydralauncher/hydra/releases/latest" target="_blank" rel="noopener">Download</a>
+              <a class="btn btn-outline" href="https://github.com/hydralauncher/hydra" target="_blank" rel="noopener">Build from source</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS / COMMUNITY (simplificado) -->
+    <section class="numbers container section">
+      <div class="numbers-grid">
+        <div class="num">
+          <div class="num-value">39M</div>
+          <div class="num-label">Total hours played</div>
+        </div>
+        <div class="num">
+          <div class="num-value">19K</div>
+          <div class="num-label">Active Users</div>
+        </div>
+        <div class="num">
+          <div class="num-value">25M</div>
+          <div class="num-label">Game Downloads</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <div class="footer-inner container">
+        <div class="brand small">
+          <img src="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24'><circle cx='12' cy='12' r='10' fill='%234ADBC8'/></svg>" alt="logo" style="height:20px;margin-right:8px;">
+          <span>Hydra Launcher</span>
+        </div>
+        <div class="footer-right">
+          <div class="socials">
+            <a href="https://github.com/hydralauncher" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://t.me/hydralauncher" target="_blank" rel="noopener">Telegram</a>
+          </div>
+          <div class="copyright" data-translate="footer_text">© 2025 Hydra Launcher</div>
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
